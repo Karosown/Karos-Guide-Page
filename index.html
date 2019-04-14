@@ -1,0 +1,131 @@
+<!--
+By:Karos
+By QQ:3039814973
+Version:V1.5.0
+Update: V1.5.0:	1.增添了播放器，绚丽彩虹的...（要换的话自己去替换播放器ID就可以了，或者自己二开）
+				2.头像可以更具自己的QQ头像进行更改
+		V1.0.0:刚刚写完，没有什么好说的
+Instructions:本源码完全开源，使用本源码即代表您遵守开源协议，即保留版权及著作权，使用权您可以更改，本源码严禁版权狗使用！
+To be Update:头像想要变幻的用自己的QQ头像（即调用QQ头像查询接口）就可以了，按钮和右边的列表以及中间的语句想要弄多个的话，那就是复制粘贴的问题
+-->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Karos</title>
+<link rel="icon" href="" type="image/x-icon">
+<!--按钮的CSS文件是别人写的，我下载下来了，在这里声明一下-->
+<link rel="stylesheet" href="./css/buttons.css">
+<style type="text/css">
+#div {
+	font-size: 50px;
+	font-style: 50;
+	line-height: 50px;
+	font-weight: 50;
+	font-variant: 50;
+	text-transform: 50;
+}
+#div_img {
+	border-top-width: 10px;
+	border-right-width: 10px;
+	border-bottom-width: 10px;
+	border-left-width: 10px;
+	border-top-style: 10;
+	border-right-style: 10;
+	border-bottom-style: 10;
+	border-left-style: 10;
+	left: 10px;
+	top: 10px;
+	right: 10px;
+	bottom: 10px;
+	border-radius:500px;
+	clip: rect(10px,10px,10px,10px);
+	width:10%;
+	height:10%;
+}
+.header-info {
+	width: 60%;
+    margin: auto;
+    font-size: 10px;
+    color: #EAEADF;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 5px 25px;
+    margin-top: 22px;
+    font-family: miranafont,"Hiragino Sans GB",STXihei,"Microsoft YaHei",SimSun,sans-serif;
+    letter-spacing: 0;
+    line-height: 20px;
+    border-radius: 40px;
+}
+.lower {
+position: relative;
+    display: inline-block;
+    float: right;
+    margin: 16.5px 0 0 0;
+    font-size: 30px;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: inline-block;
+    border-radius: 10px;
+    background: rgba(249, 249, 249, .7);
+}
+.li{
+    float: left;
+    /* margin-left: 28px; */
+    margin: 0 14px;
+    position: relative;
+    -webkit-transition: all 1s ease;
+}
+</style>
+
+</head>
+
+<body style="background-image:url(https://ws4.sinaimg.cn/large/87c01ec7gy1frmbrsgib0j21hb0u0475.jpg);;background-repeat: no-repeat;  background-attachment: fixed; background-position: center center; background-size: cover;">
+<!-- 播放器开始 -->
+<!-- Your XlchPlayerKey -->
+<script>XlchKey="3211";</script>
+<!-- font-awesome 4.2.0 -->
+<link href="http://lib.baomitu.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<!-- JQuery 2.2.4 -->
+<script src="http://lib.baomitu.com/jquery/2.2.4/jquery.min.js"></script>
+<!-- JQuery-mousewheel 3.1.9 -->
+<script src="http://lib.baomitu.com/jquery-mousewheel/3.1.9/jquery.mousewheel.min.js"></script>
+<!-- Scrollbar -->
+<script src="http://static.badapple.top/BadApplePlayer/js/scrollbar.js"></script>
+<!-- BadApplePlayer -->
+<script src="http://static.badapple.top/BadApplePlayer/Player.js"></script>
+  <!-- 播放器结束 -->
+  <br/><br/><br/><br/>
+<!--主体题开始-->
+
+<div id = "div">
+  <!-- QQ头像获取接口：http://q1.qlogo.cn/g?b=qq&nk=QQ账号&s=640 -->
+<center><img id = "div_img" src = "http://q1.qlogo.cn/g?b=qq&nk=3039814973&s=640" /></center>
+</div>
+<div class="header-info"><center><h1>措不及防，只因你回眸一笑！</h1></center></div>
+<!--右边列表开始-->
+<div class="lower">						<nav><div class="menu"><ul>
+<li><a href="http://www.wzl1.top/">Karos</a></li>
+<li><a href="http://nav.wzlstudio.top/">Nav</a></li>
+</ul></div>
+</nav><!-- #site-navigation -->
+					</div>
+<!--右边列表结束-->
+<div class="header-info">
+
+<marquee direction="right"><h1><center>撰写漫天的星辰，只为站在海那边的你</center></h1></marquee>
+  <center><marquee direction="left"><h1>一个高中生程序猿！</h1></marquee></center>
+<marquee direction="right"><h1>用非常人的心态去做常人的事！</h1></marquee>
+<marquee direction="left" scrollamount="10"><h1>回首望着星空，你在天涯何处？</h1></marquee>
+</div>
+<!--主体结束-->
+
+<center>
+<p><a href="http://www.wzl1.top" target="view_window" class="button button-glow button-border button-rounded button-highlight">Karos</a></p></center>
+
+<!--扒站者或者使用者，请保留本站著作权与版权，谢谢合作！-->
+<div class="header-info"><center>&copy;2019 Karos. Project by <a href = "http://www.wzl1.top/">Karos</a>丨Powered by <a href = "http://www.wzl1.top/">Karos</a></center></div>
+</html>
